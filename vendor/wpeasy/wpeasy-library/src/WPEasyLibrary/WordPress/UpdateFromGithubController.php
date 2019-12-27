@@ -1,10 +1,14 @@
 <?php
 
 
-namespace WPE_TestPlugin\Application\Controller;
+namespace WPEasyLibrary\WordPress;
 
-
-class UpdateController
+/**
+ * Class UpdateFromGithubController
+ * @package WPEasyLibrary\WordPress
+ *
+ */
+class UpdateFromGithubController
 {
     private $slug; // plugin slug
     private $pluginData; // plugin data
@@ -14,7 +18,21 @@ class UpdateController
     private $githubAPIResult; // holds data from GitHub
     private $accessToken; // GitHub private repo token
 
-    function __construct( $pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = '' ) {
+    /**
+     * UpdateFromGithubController constructor.
+     * @param $pluginFile
+     * @param $gitHubUsername
+     * @param $gitHubProjectName
+     * @param string $accessToken
+     *
+     * $pluginFile WordPress Plugin file, used to determine plugin details
+     * Usage:
+     *if ( is_admin() ) {
+        new UpdateController( __FILE__, 'github-user', "repository" );
+        }
+     *
+     */
+    function __construct($pluginFile, $gitHubUsername, $gitHubProjectName, $accessToken = '' ) {
         add_filter( "pre_set_site_transient_update_plugins", array( $this, "setTransitent" ) );
         add_filter( "plugins_api", array( $this, "setPluginInfo" ), 10, 3 );
         add_filter( "upgrader_post_install", array( $this, "postInstall" ), 10, 3 );

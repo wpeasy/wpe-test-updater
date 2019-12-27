@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="wpdev.wpevolve.net">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="wpdev.wpevolve.net" autoUploadExternalChanges="true">
     <serverData>
       <paths name="wpdev.wpevolve.net">
         <serverdata>
@@ -11,9 +11,11 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
             <excludedPath local="true" path="$PROJECT_DIR$/composer.json" />
             <excludedPath local="true" path="$PROJECT_DIR$/wpe-test-updater.iml" />
+            <excludedPath local="true" path="$PROJECT_DIR$/composer.lock" />
           </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>

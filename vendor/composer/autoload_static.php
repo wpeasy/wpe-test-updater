@@ -9,11 +9,16 @@ class ComposerStaticInitbfd5fb42d583cea0f6a5eb868c62f3a8
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
+            'WPEasyLibrary\\' => 14,
             'WPE_TestPlugin\\' => 15,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WPEasyLibrary\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/wpeasy/wpeasy-library/src/WPEasyLibrary',
+        ),
         'WPE_TestPlugin\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src/WPE_TestPlugin',

@@ -5,6 +5,7 @@
       <path value="C:/IntellijProjects/LIBRARIES/wordpress" />
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/wpeasy/wpeasy-library" />
     </include_path>
   </component>
 </project>

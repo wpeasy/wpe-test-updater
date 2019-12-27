@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WPEasyLibrary\\' => array($vendorDir . '/wpeasy/wpeasy-library/src/WPEasyLibrary'),
     'WPE_TestPlugin\\' => array($baseDir . '/src/WPE_TestPlugin'),
 );

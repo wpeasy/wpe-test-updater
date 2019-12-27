@@ -1,5 +1,5 @@
 {
-    "name": "alan.blair/wpe-test-updater",
+    "name": "wpeasy/wpe-test-updater",
     "license": "GPL-3.0",
     "description": "Test to see how updates via Github work",
     "type": "project",
@@ -9,7 +9,15 @@
             "email": "alan@wpeasy.net"
         }
     ],
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/wpeasy/wpeasy-library.git"
+        }
+    ],
     "require": {
+        "wpeasy/wpeasy-library": "1.0.3",
         "erusev/parsedown": "^1.7"
     },
 
