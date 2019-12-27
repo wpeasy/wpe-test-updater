@@ -1,0 +1,19 @@
+{
+    "name": "alan.blair/wpe-test-updater",
+    "license": "GPL-3.0",
+    "description": "Test to see how updates via Github work",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Alan Blair",
+            "email": "alan@wpeasy.net"
+        }
+    ],
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "WPE_TestPlugin\\": "src/WPE_TestPlugin/"
+        }
+    }
+}
