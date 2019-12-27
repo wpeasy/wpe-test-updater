@@ -3,7 +3,7 @@
  * Plugin Name: WPEasy Test Plugin
  * Plugin URI:
  * Description: Test to see how plugin updates via Github works
- * Version: 1.0.1
+ * Version: 1.0.4
  * Author: Alan Blair
  * Author URI:
  * Text Domain: wpeasy
