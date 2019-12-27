@@ -9,7 +9,9 @@
             "email": "alan@wpeasy.net"
         }
     ],
-    "require": {},
+    "require": {
+        "erusev/parsedown": "^1.7"
+    },
 
     "autoload": {
         "psr-4": {

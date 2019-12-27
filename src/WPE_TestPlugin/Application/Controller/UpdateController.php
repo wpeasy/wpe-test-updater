@@ -108,6 +108,7 @@ class UpdateController
         $response->last_updated = $this->githubAPIResult->published_at;
         $response->slug = $this->slug;
         $response->plugin_name  = $this->pluginData["Name"];
+        $response->name  = $this->pluginData["Name"];
         $response->version = $this->githubAPIResult->tag_name;
         $response->author = $this->pluginData["AuthorName"];
         $response->homepage = $this->pluginData["PluginURI"];
@@ -123,6 +124,35 @@ class UpdateController
             );
         }
         $response->download_link = $downloadLink;
+
+        // Create tabs in the lightbox
+        $response->sections = array(
+            'description' => $this->pluginData["Description"],
+            'changelog' => \Parsedown::instance()->parse( $this->githubAPIResult->body )
+        );
+
+        // Gets the required version of WP if available
+        $matches = null;
+        preg_match( "/requires:\s([\d\.]+)/i", $this->githubAPIResult->body, $matches );
+        if ( ! empty( $matches ) ) {
+            if ( is_array( $matches ) ) {
+                if ( count( $matches ) > 1 ) {
+                    $response->requires = $matches[1];
+                }
+            }
+        }
+
+        // Gets the tested version of WP if available
+        $matches = null;
+        preg_match( "/tested:\s([\d\.]+)/i", $this->githubAPIResult->body, $matches );
+        if ( ! empty( $matches ) ) {
+            if ( is_array( $matches ) ) {
+                if ( count( $matches ) > 1 ) {
+                    $response->tested = $matches[1];
+                }
+            }
+        }
+
         return $response;
     }
 
