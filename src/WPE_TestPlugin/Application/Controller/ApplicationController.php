@@ -17,7 +17,7 @@ class ApplicationController
 
     static function admin_init()
     {
-        echo __METHOD__;
+        //echo __METHOD__;
     }
 
 }

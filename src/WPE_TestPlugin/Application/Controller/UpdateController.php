@@ -56,6 +56,8 @@ class UpdateController
         if ( is_array( $this->githubAPIResult ) ) {
             $this->githubAPIResult = $this->githubAPIResult[0];
         }
+
+        //file_put_contents(__DIR__ . '/details.json', json_encode($this->githubAPIResult), JSON_PRETTY_PRINT);
     }
 
     // Push in plugin version information to get the update notification
