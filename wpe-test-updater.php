@@ -3,7 +3,7 @@
  * Plugin Name: WPEasy Test Plugin
  * Plugin URI:
  * Description: Test to see how plugin updates via Github works
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Alan Blair
  * Author URI:
  * Text Domain: wpeasy
@@ -17,6 +17,7 @@ require_once __DIR__ .'/vendor/autoload.php';
 
 if ( is_admin() ) {
     new UpdateFromGithubController( __FILE__, 'wpeasy', "wpe-test-updater" );
+
 }
 
 ApplicationController::init([]);

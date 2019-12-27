@@ -1,17 +1,17 @@
 [
     {
         "name": "erusev/parsedown",
-        "version": "1.8.0-beta-7",
-        "version_normalized": "1.8.0.0-beta7",
+        "version": "1.7.3",
+        "version_normalized": "1.7.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/erusev/parsedown.git",
-            "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
+            "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
-            "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+            "url": "https://api.github.com/repos/erusev/parsedown/zipball/6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
+            "reference": "6d893938171a817f4e9bc9e86f2da1e370b7bcd7",
             "shasum": ""
         },
         "require": {
@@ -21,7 +21,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.35"
         },
-        "time": "2019-03-17T18:47:21+00:00",
+        "time": "2019-03-17T18:48:37+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -49,20 +49,20 @@
     },
     {
         "name": "wpeasy/wpeasy-library",
-        "version": "1.0.3",
-        "version_normalized": "1.0.3.0",
+        "version": "v1.0.4",
+        "version_normalized": "1.0.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/wpeasy/wpeasy-library.git",
-            "reference": "8aa99d7978df9289610dd88c3700e5394a92c3e8"
+            "reference": "ad0df78eb17b87aae17b3fddd6b0b08e0ea08ebc"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/wpeasy/wpeasy-library/zipball/8aa99d7978df9289610dd88c3700e5394a92c3e8",
-            "reference": "8aa99d7978df9289610dd88c3700e5394a92c3e8",
+            "url": "https://api.github.com/repos/wpeasy/wpeasy-library/zipball/ad0df78eb17b87aae17b3fddd6b0b08e0ea08ebc",
+            "reference": "ad0df78eb17b87aae17b3fddd6b0b08e0ea08ebc",
             "shasum": ""
         },
-        "time": "2019-12-27T22:15:55+00:00",
+        "time": "2019-12-27T23:17:12+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -81,7 +81,7 @@
         ],
         "description": "Library used by WPEasy WordPress plugins",
         "support": {
-            "source": "https://github.com/wpeasy/wpeasy-library/tree/1.03",
+            "source": "https://github.com/wpeasy/wpeasy-library/tree/v1.0.4",
             "issues": "https://github.com/wpeasy/wpeasy-library/issues"
         }
     }
